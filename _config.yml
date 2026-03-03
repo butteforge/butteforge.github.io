@@ -1,0 +1,18 @@
+title: "THE BUTTE FORGE: EMBEDDED SYSTEMS & AI"
+description: "Embedded Systems & AI Club at Montana Tech"
+baseurl: ""
+url: ""
+
+markdown: kramdown
+theme: minima
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+
+header_pages:
+  - index.md

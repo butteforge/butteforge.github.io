@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Sky background circle -->
+  <circle cx="120" cy="120" r="115" fill="#e3f2fd" />
+
+  <!-- Ground -->
+  <rect x="5" y="190" width="230" height="45" rx="6" fill="#bcaaa4" />
+  <rect x="5" y="190" width="230" height="8" rx="3" fill="#8d6e63" />
+
+  <!-- Crane base -->
+  <rect x="50" y="170" width="40" height="20" rx="3" fill="#455a64" />
+  <!-- Treads -->
+  <rect x="42" y="186" width="56" height="14" rx="7" fill="#37474f" />
+  <circle cx="52" cy="193" r="5" fill="#546e7a" />
+  <circle cx="68" cy="193" r="5" fill="#546e7a" />
+  <circle cx="84" cy="193" r="5" fill="#546e7a" />
+
+  <!-- Crane tower (vertical mast) -->
+  <rect x="64" y="40" width="12" height="132" fill="#ffa726" />
+  <!-- Lattice lines on tower -->
+  <line x1="64" y1="55" x2="76" y2="70" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="55" x2="64" y2="70" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="64" y1="75" x2="76" y2="90" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="75" x2="64" y2="90" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="64" y1="95" x2="76" y2="110" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="95" x2="64" y2="110" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="64" y1="115" x2="76" y2="130" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="115" x2="64" y2="130" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="64" y1="135" x2="76" y2="150" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="135" x2="64" y2="150" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="64" y1="155" x2="76" y2="170" stroke="#f57f17" stroke-width="1.5" />
+  <line x1="76" y1="155" x2="64" y2="170" stroke="#f57f17" stroke-width="1.5" />
+
+  <!-- Operator cab -->
+  <rect x="56" y="155" width="28" height="18" rx="3" fill="#ffb74d" />
+  <rect x="60" y="158" width="10" height="10" rx="2" fill="#bbdefb" opacity="0.8" />
+
+  <!-- Boom (horizontal arm going right) -->
+  <rect x="70" y="36" width="140" height="8" rx="2" fill="#ffa726" />
+  <!-- Lattice on boom -->
+  <line x1="85" y1="36" x2="100" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="100" y1="36" x2="85" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="110" y1="36" x2="125" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="125" y1="36" x2="110" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="135" y1="36" x2="150" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="150" y1="36" x2="135" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="160" y1="36" x2="175" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="175" y1="36" x2="160" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="185" y1="36" x2="200" y2="44" stroke="#f57f17" stroke-width="1.2" />
+  <line x1="200" y1="36" x2="185" y2="44" stroke="#f57f17" stroke-width="1.2" />
+
+  <!-- Counter-jib (short arm going left) -->
+  <rect x="20" y="36" width="50" height="8" rx="2" fill="#ffa726" />
+  <!-- Counterweight -->
+  <rect x="18" y="42" width="20" height="14" rx="2" fill="#455a64" />
+
+  <!-- Top peak / A-frame -->
+  <polygon points="70,36 76,20 82,36" fill="#ffa726" />
+
+  <!-- Cable from peak to boom tip -->
+  <line x1="76" y1="22" x2="206" y2="38" stroke="#37474f" stroke-width="1.5" />
+  <!-- Cable from peak to counter-jib -->
+  <line x1="76" y1="22" x2="22" y2="38" stroke="#37474f" stroke-width="1.5" />
+
+  <!-- Hoist cable (vertical, from boom) -->
+  <line x1="180" y1="44" x2="180" y2="120" stroke="#37474f" stroke-width="1.5" />
+
+  <!-- Hook -->
+  <circle cx="180" cy="124" r="5" fill="#455a64" />
+  <path d="M175 124 Q170 124 170 130 Q170 138 180 138 Q186 138 188 134" stroke="#455a64" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Steel beam hanging from hook -->
+  <rect x="162" y="138" width="36" height="8" rx="2" fill="#78909c" />
+  <rect x="164" y="140" width="4" height="4" rx="1" fill="#90a4ae" />
+  <rect x="190" y="140" width="4" height="4" rx="1" fill="#90a4ae" />
+  <!-- Cables to beam -->
+  <line x1="172" y1="130" x2="168" y2="138" stroke="#37474f" stroke-width="1" />
+  <line x1="188" y1="130" x2="192" y2="138" stroke="#37474f" stroke-width="1" />
+
+  <!-- Small building under construction on right -->
+  <rect x="155" y="162" width="50" height="28" rx="2" fill="#e0e0e0" />
+  <rect x="160" y="168" width="10" height="12" rx="1" fill="#bbdefb" />
+  <rect x="175" y="168" width="10" height="12" rx="1" fill="#bbdefb" />
+  <rect x="190" y="168" width="10" height="12" rx="1" fill="#bbdefb" />
+  <!-- Scaffolding lines -->
+  <line x1="155" y1="178" x2="205" y2="178" stroke="#bdbdbd" stroke-width="1" />
+
+  <!-- Traffic cone -->
+  <polygon points="130,190 125,200 135,200" fill="#ff8f00" />
+  <rect x="123" y="199" width="14" height="3" rx="1" fill="#e65100" />
+  <line x1="127" y1="195" x2="133" y2="195" stroke="#ffee58" stroke-width="1.5" />
+
+  <!-- Clouds -->
+  <ellipse cx="30" cy="25" rx="16" ry="8" fill="white" opacity="0.7" />
+  <ellipse cx="44" cy="22" rx="12" ry="7" fill="white" opacity="0.7" />
+  <ellipse cx="195" cy="18" rx="14" ry="7" fill="white" opacity="0.6" />
+  <ellipse cx="210" cy="15" rx="10" ry="6" fill="white" opacity="0.6" />
+</svg>
