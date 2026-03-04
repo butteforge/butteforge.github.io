@@ -14,15 +14,16 @@
                     <li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>
                   {% endif %}
                 {% endfor %}
+                {% assign next_index = forloop.index %}
+                {% assign next_item = site.nav[next_index] %}
+                {% if next_item.page %}
+                  {% assign linked = site.pages | where: "path", next_item.page | first %}
+                  {% if linked %}
+                    <li><a href="{{ linked.url | relative_url }}">{{ next_item.title | escape }}</a></li>
+                  {% endif %}
+                {% endif %}
               </ul>
             </li>
-            {% elsif group.page %}
-              {% assign linked = site.pages | where: "path", group.page | first %}
-              {% if linked %}
-            <li class="footer-nav-group">
-              <span class="footer-nav-label"><a href="{{ linked.url | relative_url }}">{{ group.title | escape }}</a></span>
-            </li>
-              {% endif %}
             {% endif %}
           {% endfor %}
         </ul>
