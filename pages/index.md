@@ -14,7 +14,7 @@ Welcome to THE BUTTE FORGE: EMBEDDED SYSTEMS & AI website.
 We are building a new platform to showcase our research, embedded systems
 projects, and engineering work at Montana Tech.
 
-Check our [progress status](status.html) or learn more [about us](about.html).
+Check our [progress status](activity/status.html) or learn more [about us](about/purpose.html).
 
 ---
 

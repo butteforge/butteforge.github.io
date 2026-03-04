@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Status
-permalink: /status.html
+permalink: /activity/status.html
 ---
 
 # Project Status

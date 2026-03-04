@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Meetings
-permalink: /meetings.html
+permalink: /activity/meetings.html
 ---
 
 # Meetings

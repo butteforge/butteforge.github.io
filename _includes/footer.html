@@ -2,13 +2,19 @@
   <div class="wrapper">
     <div class="footer-upper">
       <div class="footer-nav">
-        <h3 class="footer-heading">Pages</h3>
         <ul class="footer-nav-list">
-          {% for page_path in site.header_pages %}
-            {% assign my_page = site.pages | where: "path", page_path | first %}
-            {% if my_page.title %}
-              <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-            {% endif %}
+          {% for group in site.nav %}
+            <li class="footer-nav-group">
+              <span class="footer-nav-label">{{ group.title }}</span>
+              <ul>
+                {% for child_path in group.children %}
+                  {% assign child = site.pages | where: "path", child_path | first %}
+                  {% if child.title %}
+                    <li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
           {% endfor %}
         </ul>
       </div>

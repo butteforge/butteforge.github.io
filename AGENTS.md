@@ -10,9 +10,18 @@ This is a GitHub Pages site for THE BUTTE FORGE: EMBEDDED SYSTEMS & AI, a studen
 
 - `pages/` - Site pages (Markdown content served by Jekyll)
   - `pages/index.md` - Main landing page (permalink: `/`)
-  - `pages/about.md` - About the organization
-  - `pages/teams.md` - The four departments
-  - `pages/status.md` - Project progress tracker
+  - `pages/about/` - About section
+    - `purpose.md` - Purpose and objectives
+    - `team.md` - Leadership team
+    - `montana-tech.md` - Alignment and institutional support
+  - `pages/departments/` - Department pages
+    - `software.md` - Software Engineering
+    - `hardware.md` - Hardware Engineering
+    - `modeling.md` - Modeling & AI
+    - `systems.md` - Systems & Operations
+  - `pages/activity/` - Activity section
+    - `meetings.md` - Meeting notes
+    - `status.md` - Project progress tracker
 - `_config.yml` - Jekyll configuration
 - `_layouts/default.html` - Base HTML layout (wraps every page)
 - `_includes/header.html` - Shared site header (logo + navigation)
@@ -55,29 +64,32 @@ This is a GitHub Pages site for THE BUTTE FORGE: EMBEDDED SYSTEMS & AI, a studen
   and footer automatically. All pages should use `layout: default` in their
   front matter.
 - `_includes/header.html` renders the logo, site title, and navigation links.
-  Navigation is driven by the `header_pages` list in `_config.yml`.
+  Navigation is driven by the `nav` list in `_config.yml`, which defines
+  dropdown groups and their child pages.
 - `_includes/footer.html` renders the copyright and site description.
+  Footer navigation mirrors the `nav` structure from `_config.yml`.
 - To change the header or footer site-wide, edit the corresponding file in
   `_includes/`. Do not duplicate header/footer content in individual pages.
 
 ## Adding New Pages
 
-1. Create a new `.md` file inside the `pages/` directory.
+1. Create a new `.md` file inside the appropriate `pages/` subdirectory
+   (e.g., `pages/about/`, `pages/departments/`, `pages/activity/`).
 2. Add front matter at the top with `layout: default`, a `title`, and a
-   `permalink`:
+   `permalink` matching the subdirectory structure:
    ```
    ---
    layout: default
    title: Page Title
-   permalink: /page-title.html
+   permalink: /section/page-title.html
    ---
    ```
-3. Add `pages/<filename>` to the `header_pages` list in `_config.yml` if it
-   should appear in site navigation.
+3. Add the page path to the appropriate group under the `nav` list in
+   `_config.yml` so it appears in the dropdown navigation.
 4. Do not place site pages in the repository root. Only infrastructure files
    (`AGENTS.md`, `README.md`, etc.) belong in the root.
 5. Do not add `AGENTS.md`, `README.md`, or other infrastructure files to
-   `header_pages`.
+   `nav`.
 
 ## Git Practices
 

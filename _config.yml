@@ -16,7 +16,20 @@ exclude:
 
 header_pages:
   - pages/index.md
-  - pages/about.md
-  - pages/teams.md
-  - pages/meetings.md
-  - pages/status.md
+
+nav:
+  - title: About
+    children:
+      - pages/about/purpose.md
+      - pages/about/team.md
+      - pages/about/montana-tech.md
+  - title: Departments
+    children:
+      - pages/departments/software.md
+      - pages/departments/hardware.md
+      - pages/departments/modeling.md
+      - pages/departments/systems.md
+  - title: Activity
+    children:
+      - pages/activity/meetings.md
+      - pages/activity/status.md

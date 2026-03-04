@@ -4,11 +4,23 @@
       <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title | escape }}" width="80">
     </a>
     <nav class="site-nav">
-      {% for path in site.header_pages %}
-        {% assign my_page = site.pages | where: "path", path | first %}
-        {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-        {% endif %}
+      {% for item in site.nav %}
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle page-link" aria-haspopup="true" aria-expanded="false">
+            {{ item.title }}
+            <svg class="nav-chevron" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="nav-dropdown-menu">
+            {% for child_path in item.children %}
+              {% assign child = site.pages | where: "path", child_path | first %}
+              {% if child.title %}
+                <li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
       {% endfor %}
     </nav>
   </div>
